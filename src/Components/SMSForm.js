@@ -58,10 +58,12 @@ class SMSForm extends Component {
   
     render() {
         return (
+          <section>
         <form
             onSubmit={this.onSubmit}
             className={this.state.error ? 'error sms-form' : 'sms-form'}>
             <div>
+              <h1>Send a Message</h1>
               <label htmlFor="to">To:</label>
               <input
                  type="tel"
@@ -84,6 +86,7 @@ class SMSForm extends Component {
         Send message
         </button>
       </form>
+      </section>
     );
   }
     
